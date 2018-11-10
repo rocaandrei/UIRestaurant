@@ -74,5 +74,9 @@ namespace FoodAppTemplate
             SidePannelButton.Top = nextButton.Top;
         }
 
+        private void QuestionMarkButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("C# UI Design by Andrei Roca", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

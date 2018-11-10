@@ -30,9 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RestaurantApp));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button13 = new System.Windows.Forms.Button();
+            this.QuestionMarkButton = new System.Windows.Forms.Button();
             this.SidePannelButton = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.CustomersButtons = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.PaymentButton = new System.Windows.Forms.Button();
             this.TakeAwayButton = new System.Windows.Forms.Button();
             this.DeliveryButton = new System.Windows.Forms.Button();
@@ -46,10 +49,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.secondUserControl1 = new FoodAppTemplate.SecondUserControl();
             this.firstCustomControl1 = new FoodAppTemplate.FirstCustomControl();
             this.panel1.SuspendLayout();
@@ -61,7 +60,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.QuestionMarkButton);
             this.panel1.Controls.Add(this.SidePannelButton);
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.CustomersButtons);
@@ -79,18 +78,19 @@
             this.panel1.Size = new System.Drawing.Size(201, 592);
             this.panel1.TabIndex = 0;
             // 
-            // button13
+            // QuestionMarkButton
             // 
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(9, 522);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(52, 58);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "?";
-            this.button13.UseVisualStyleBackColor = true;
+            this.QuestionMarkButton.FlatAppearance.BorderSize = 0;
+            this.QuestionMarkButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.QuestionMarkButton.Font = new System.Drawing.Font("Yu Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuestionMarkButton.ForeColor = System.Drawing.Color.White;
+            this.QuestionMarkButton.Location = new System.Drawing.Point(9, 522);
+            this.QuestionMarkButton.Name = "QuestionMarkButton";
+            this.QuestionMarkButton.Size = new System.Drawing.Size(52, 58);
+            this.QuestionMarkButton.TabIndex = 13;
+            this.QuestionMarkButton.Text = "?";
+            this.QuestionMarkButton.UseVisualStyleBackColor = true;
+            this.QuestionMarkButton.Click += new System.EventHandler(this.QuestionMarkButton_Click);
             // 
             // SidePannelButton
             // 
@@ -99,6 +99,19 @@
             this.SidePannelButton.Name = "SidePannelButton";
             this.SidePannelButton.Size = new System.Drawing.Size(10, 48);
             this.SidePannelButton.TabIndex = 3;
+            // 
+            // button10
+            // 
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(134, 6);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(52, 58);
+            this.button10.TabIndex = 12;
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // CustomersButtons
             // 
@@ -115,6 +128,32 @@
             this.CustomersButtons.Text = "        Customers";
             this.CustomersButtons.UseVisualStyleBackColor = true;
             this.CustomersButtons.Click += new System.EventHandler(this.CustomersButtons_Click);
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(76, 6);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(52, 58);
+            this.button9.TabIndex = 11;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(18, 6);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(52, 58);
+            this.button8.TabIndex = 10;
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // PaymentButton
             // 
@@ -295,56 +334,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(331, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(265, 22);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "C# UI Design by Andrei Roca";
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(18, 6);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(52, 58);
-            this.button8.TabIndex = 10;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(76, 6);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(52, 58);
-            this.button9.TabIndex = 11;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(134, 6);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(52, 58);
-            this.button10.TabIndex = 12;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // secondUserControl1
             // 
             this.secondUserControl1.BackColor = System.Drawing.Color.White;
@@ -367,7 +356,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1120, 638);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.secondUserControl1);
             this.Controls.Add(this.firstCustomControl1);
             this.Controls.Add(this.panel3);
@@ -383,7 +371,6 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -405,11 +392,10 @@
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button QuestionMarkButton;
         private FirstCustomControl firstCustomControl1;
         private SecondUserControl secondUserControl1;
     }
