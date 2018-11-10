@@ -15,8 +15,7 @@ namespace FoodAppTemplate
         public RestaurantApp()
         {
             InitializeComponent();
-            SidePannelButton.Height = HomeButton.Height;
-            SidePannelButton.Top = HomeButton.Top;
+            MoveSidePanel(HomeButton);
             firstCustomControl1.BringToFront();
         }
 
